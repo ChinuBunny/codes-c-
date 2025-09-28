@@ -1,0 +1,45 @@
+/*
+     1
+    121
+   12312
+  1234123
+ 123451234
+
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int a=1;
+    int n;
+    cout<<"enter value of n = ";
+    cin>>n;
+    // for(int i=0;i<n;i++)
+    // {
+    //     for(int j=n-i-1;j>=0;j--)
+    //     cout<<" ";
+    //     for(int j=0;j<2*i+1;j++)
+    //     cout<<"*";
+    //     cout<<endl;
+    // }
+
+
+    for(int i=0;i<n;i++)
+    {
+        for(int j=n-i-1;j>=0;j--)
+        cout<<" ";
+        for(int j=0;j<i+1;j++){
+        // cout<<"*";
+        cout<<a;
+        a++;
+        }
+        a=1;
+        for(int j=0;j<i;j++){
+        // cout<<"*";
+        cout<<a;
+        a++;
+        }
+        a=1;
+        cout<<endl;
+    }
+}
